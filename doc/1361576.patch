@@ -9,3 +9,4 @@ diff --git a/layout/xul/nsXULPopupManager.cpp b/layout/xul/nsXULPopupManager.cpp
    nsMenuFrame* menuFrame = do_QueryFrame(aMenu->GetPrimaryFrame());
    if (!menuFrame || !menuFrame->IsMenu()) return;
  
+

@@ -1,0 +1,11 @@
+diff --git a/layout/xul/nsXULPopupManager.cpp b/layout/xul/nsXULPopupManager.cpp
+--- a/layout/xul/nsXULPopupManager.cpp
++++ b/layout/xul/nsXULPopupManager.cpp
+@@ -642,6 +642,7 @@ void nsXULPopupManager::SetActiveMenuBar
+ 
+ void nsXULPopupManager::ShowMenu(nsIContent* aMenu, bool aSelectFirstItem,
+                                  bool aAsynchronous) {
++  MOZ_ASSERT(aMenu);
+   nsMenuFrame* menuFrame = do_QueryFrame(aMenu->GetPrimaryFrame());
+   if (!menuFrame || !menuFrame->IsMenu()) return;
+ 
